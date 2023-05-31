@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3,
+input.h3-style {
+    font-family: 'Lato', sans-serif;
+    font-size: calc(1rem + .5vw);
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+h5,
+input.h5-style {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p,
+input.par-style {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.page {
+    min-height: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.page-content {
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.page:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.page-content {
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="text"] {
+    border: none;
+    background-color: transparent;
+    line-height: inherit;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.category-group {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateZ(10px);
+    align-self: flex-start;
+    background-color: #ffffffd7;
+}
+
+.flex-container {
+    position: relative;
+}
+
+.palette {
+    all: unset;
+    position: absolute;
+    right: 10px;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+
+dialog {
+    z-index: 10;
+    margin-top: 10px;
+    background: green;
+    border: none;
+    border-radius: 1rem;
+}
+
+.color-selection {
+    width: 100px;
+    height: 100px;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-backdrop {
+    opacity: 0;
+    /* Adjust the opacity as desired */
+    background-color: #00000000;
+    /* Adjust the background color as desired */
+    display: none !important;
+}
+
+.modal {
+    pointer-events: auto !important;
+}
+
+.modal-backdrop {
+}
